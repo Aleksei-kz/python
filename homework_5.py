@@ -1,0 +1,10 @@
+t1_txt = open("HW_5.txt", "w", encoding="utf-8")
+info = input("Введите числа через пробел - ")
+t1_txt.write(info)
+t1_txt.close()
+
+t2_txt = open("HW_5.txt", "r")
+sum_t2 = t2_txt.readline()
+sum_t2 = list(map(int, sum_t2.split()))
+print(f"Сума всех введёных чисел = {sum(sum_t2)}.")
+t2_txt.close()
